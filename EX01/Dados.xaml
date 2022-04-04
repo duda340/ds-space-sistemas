@@ -1,0 +1,34 @@
+﻿<Window x:Class="EX01.Dados"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EX01"
+        mc:Ignorable="d"
+        Title="Dados" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Cadastro" FontSize="26" Margin="0 20" HorizontalAlignment="Center"/>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Margin="20 0">
+                <Label Content="Dados pessoais" FontSize="22"/>
+                <Label Content="Nome"/>
+                <TextBox x:Name="txtNome" Padding="6"/>
+                <Label Content="Data Nascimento"/>
+                <DatePicker x:Name="dataNascimento" Padding="6"/>
+                <Label Content="CPF"/>
+                <TextBox x:Name="txtCPF" Padding="6"/>
+                <Label Content="RG"/>
+                <RichTextBox x:Name="txtRG" Padding="6"/>
+            </StackPanel>
+        </Grid>
+        
+    </Grid>
+</Window>
